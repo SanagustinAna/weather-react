@@ -12,7 +12,7 @@ export default function WeekWeather(props) {
     const [forecastIcon, setForecastIcon] = useState(null);
 
     function getForecast(props) {
-        let apiKey = "b8460e3f37d976669c784023439cb3c3";
+        let apiKey = "c2914b747057d9a78dba2c40cc233469";
         let units = "metric";
         let excludeInfo = 'current,minutely,hourly,alerts';
         let apiForecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.latitude}&lon=${props.longitude}&exclude=${excludeInfo}&appid=${apiKey}&units=${units}`
