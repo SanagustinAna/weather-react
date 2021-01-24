@@ -1,0 +1,103 @@
+.card-header .btn-secondary {
+  background-color: rgb(131, 131, 131);
+}
+
+.card-header .btn-secondary:hover {
+  background-color: rgba(131, 131, 131, 0.7);
+}
+
+.card-header .btn-primary,
+.card-header .btn-secondary {
+  margin: 0 0 5px 5px;
+  padding: 7px 25px;
+  transition: 300ms ease-in-out;
+}
+
+.card-header {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.card-header .form-control {
+  display: inline;
+  width: 60%;
+}
+
+.card-header .weather-search {
+  display: inline;
+}
+
+.card-body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.card-body .CityWeather {
+  padding: 30px 0;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-body .CityWeather h1 {
+  display: inline;
+  font-size: 80px;
+  vertical-align: middle;
+}
+
+.card-body .CityWeather .main-weather {
+  width: 120px;
+}
+
+.card-body .CityWeather .temperature-type {
+  vertical-align: top;
+}
+
+.card-body .CityWeather .temperature-type .active {
+  color: #24292e;
+  cursor: default;
+}
+
+.card-body .CityWeather .temperature-type .active:hover {
+  color: #24292e;
+  text-decoration: none;
+}
+
+.card-body .PlaceHour {
+  text-align: center;
+  width: auto;
+  display: block;
+  margin: 0 0 0 15px;
+}
+
+.card-body .PlaceHour .current-city {
+  color: rgb(131, 131, 131);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1;
+  display: block;
+  margin: 10px auto;
+}
+
+.card-body .PlaceHour .date-time,
+.card-body .PlaceHour .weather_description {
+  color: rgb(131, 131, 131);
+  margin-bottom: 0;
+  display: block;
+}
+
+.card-body .PlaceHour .date-time,
+.card-body .PlaceHour .weather_description::first-letter {
+  text-transform: capitalize;
+}
+
+.card-body .WeatherDetails {
+  color: rgb(131, 131, 131);
+  margin-top: 15px;
+}
+
+.card-body #day-weather:hover {
+  background-color: rgba(247, 245, 246, 0.3);
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 10px;
+}
