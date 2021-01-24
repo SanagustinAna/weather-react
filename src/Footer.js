@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="card-footer text-center text-muted">
       <p className="name-footer">
         <a
-          href="https://github.com/asan20/weather-page.git"
+          href="https://github.com/asan20/weather-react.git"
           target="_blank"
           rel="noreferrer"
         >
