@@ -1,0 +1,65 @@
+.CityData {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.CityData .CityWeather {
+  padding: 30px 0;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.CityData .CityWeather h1 {
+  display: inline;
+  font-size: 80px;
+  vertical-align: middle;
+}
+
+.CityData .CityWeather .main-weather {
+  width: 120px;
+}
+
+.CityData .CityWeather .temperature-type {
+  vertical-align: top;
+}
+
+.CityData .PlaceHour {
+  text-align: center;
+  width: auto;
+  display: block;
+  margin: 0 0 0 15px;
+}
+
+.CityData .PlaceHour .current-city {
+  color: rgb(131, 131, 131);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1;
+  display: block;
+  margin: 10px auto;
+}
+
+.CityData .PlaceHour .date-time,
+.CityData .PlaceHour .weather_description {
+  color: rgb(131, 131, 131);
+  margin-bottom: 0;
+  display: block;
+}
+
+.CityData .PlaceHour .date-time,
+.CityData .PlaceHour .weather_description::first-letter {
+  text-transform: capitalize;
+}
+
+.CityData .WeatherDetails {
+  color: rgb(131, 131, 131);
+  margin-top: 15px;
+}
+
+.CityData #day-weather:hover {
+  background-color: rgba(247, 245, 246, 0.3);
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 10px;
+}

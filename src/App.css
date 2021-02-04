@@ -1,6 +1,21 @@
-.card {
+.App .card {
   display: block;
   margin: 15px auto;
+  max-width: 750px;
 }
+
+.App .card-footer .name-footer{
+  font-size: 12px;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 0;
+  color: rgb(36, 41, 46);
+  font-weight: 600;
+}
+
+.App .name-footer a {
+  color: rgb(222, 124, 0);
+  font-weight: bolder;
+}
+
 
 
