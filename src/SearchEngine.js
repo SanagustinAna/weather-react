@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./SearchEngine.css";
 import axios from "axios";
 import CityData from "./CityData";
+import Loader from "react-loader-spinner";
+
 
 
 export default function SearchEngine() {
@@ -9,7 +11,7 @@ export default function SearchEngine() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    let apiKey = "92d00d73e14488658423852ecb6e0859";
+    let apiKey = "b8460e3f37d976669c784023439cb3c3";
     let units = "metric";
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${WeatherData.city}&appid=${apiKey}&units=${units}`;
     axios.get(apiURL).then(showWeather);
@@ -30,7 +32,7 @@ export default function SearchEngine() {
         temp: Math.round(response.data.main.temp),
         humidity: Math.round(response.data.main.humidity),
         wind: Math.round(response.data.wind.speed),
-        icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+        icon: response.data.weather[0].icon,
         timestamp: new Date(response.data.dt *1000),
     })
   }
@@ -75,7 +77,16 @@ export default function SearchEngine() {
                     </button>
                 </form>
             </div>
-            <h1>Search a city ...</h1>
+            <div className="search_message">
+                <h1><strong>Search above for the weather...</strong></h1>
+                <Loader
+                    type="MutatingDots"
+                    color="#007bff"
+                    height={100}
+                    width={100}
+                    secondaryColor= 'rgb(222, 124, 0)'
+                 />
+            </div>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import SearchEngine from "./SearchEngine";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <div className="card w-75" id="card_border">
         <SearchEngine />
          <div className="card-footer text-center text-muted">

@@ -4,7 +4,7 @@
   transition: 300ms ease-in-out;
 }
 
-.SearchEngine .card-header {
+.SearchEngine{
   font-family: "Libre Franklin", sans-serif;
 }
 
@@ -17,3 +17,7 @@
   display: inline;
 }
 
+.SearchEngine .search_message {
+  text-align: center;
+  padding: 40px;
+}

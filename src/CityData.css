@@ -16,8 +16,9 @@
   vertical-align: middle;
 }
 
-.CityData .CityWeather .main-weather {
-  width: 120px;
+.CityData .CityWeather canvas {
+    float: left;
+    margin-right: 10px
 }
 
 .CityData .CityWeather .temperature-type {
@@ -58,8 +59,3 @@
   margin-top: 15px;
 }
 
-.CityData #day-weather:hover {
-  background-color: rgba(247, 245, 246, 0.3);
-  border: 1px solid rgb(217, 217, 217);
-  border-radius: 10px;
-}

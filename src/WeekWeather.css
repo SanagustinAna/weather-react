@@ -1,0 +1,14 @@
+.WeekWeather {
+    display: contents;
+}
+
+.WeekWeather .ForecastDay {
+    width: 140px;
+}
+
+.WeekWeather .ForecastDay:hover {
+    background-color: rgba(247, 245, 246, 0.3);
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+}
+
